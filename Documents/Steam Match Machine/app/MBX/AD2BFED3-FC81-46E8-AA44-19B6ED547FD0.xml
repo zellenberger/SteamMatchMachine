@@ -1,0 +1,167 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="AD2BFED3-FC81-46E8-AA44-19B6ED547FD0" platform="MtDesktop" defaultW="800" defaultH="600" measureW="800" measureH="600" mobileScreenScale="0">
+  <controls controlCount="26">
+    <control controlID="C2F42EAF-36DA-43BD-9081-F69627E50403" controlTypeID="BrowserWindow" x="0" y="0" w="800" h="600" zOrder="0">
+      <locked>True</locked>
+      <color>4284900966</color>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+      <text>Mockplus%0D%0Ahttps%3A%2F%2Fwww.mockplus.com</text>
+      <textVAlign>VaTop</textVAlign>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="DCB45BC9-535C-4ECB-A057-B316FD78842F" controlTypeID="ButtonBar" x="3" y="72" w="793" h="30" zOrder="1">
+      <color>4279723958</color>
+      <borderColor>39372</borderColor>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="F18AA0C1-D71F-4C56-B864-A0EB9D61566D" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{CB693530-C841-4E3D-B40B-2B2783DE7455}" coords="(0.5,0.5,159.5,29.5)"/>
+        </link>
+        <link targetPageID="CCE3C864-7EF6-4ECD-B7BA-2690E76F777C" linkType="ltPageLink" isApplyIncludePage="False" title="Quiz">
+          <area shape="0" alt="" ID="{6F7ACE20-D180-48AE-BED7-3DBA57A53359}" coords="(159.5,0.5,318.5,29.5)"/>
+        </link>
+        <link targetPageID="BFD73C31-4ADD-4057-8D25-924C43E9638E" linkType="ltPageLink" isApplyIncludePage="False" title="Recommendations">
+          <area shape="0" alt="" ID="{5B7DB08C-AF77-4E3B-A56F-5B30C24439FA}" coords="(318.5,0.5,477.5,29.5)"/>
+        </link>
+        <link targetPageID="AD2BFED3-FC81-46E8-AA44-19B6ED547FD0" linkType="ltPageLink" isApplyIncludePage="False" title="About">
+          <area shape="0" alt="" ID="{8C1E53D6-5C4E-44AC-B175-3F8CF1A0F781}" coords="(477.5,0.5,636.5,29.5)"/>
+        </link>
+        <link targetPageID="9A6FBF4F-2FA6-4B27-940A-62BFF5ECA453" linkType="ltPageLink" isApplyIncludePage="False" title="SteamSignin">
+          <area shape="0" alt="" ID="{C3222A42-5A20-4E1E-9A78-683D4A912A07}" coords="(636.5,0.5,792.5,29.5)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+      <text>Home%2CQuiz%2CRecommendations%2CAbout%2CSteamSignin</text>
+      <textColor>4294967295</textColor>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="B51D0EB6-ABEF-4BA4-8B54-E6ED0A498BB7" controlTypeID="ScrollView" x="3" y="102" w="797" h="469" zOrder="2">
+      <color>4284900966</color>
+      <groupChildrenDescriptors>
+        <control controlID="E02AA1E2-8847-4FA7-A2C3-601F112ECEF0" controlTypeID="ScrollViewContentPanel" x="0" y="0" w="917" h="860" zOrder="0">
+          <alias>contentPanel</alias>
+          <groupChildrenDescriptors>
+            <control controlID="49D9940D-95CC-402D-B9F4-202667BDCBDC" controlTypeID="Panel" x="30" y="30" w="727" h="104" zOrder="0">
+              <color>4281545523</color>
+              <groupChildrenDescriptors>
+                <control controlID="266FF48B-A0F8-4B68-BDF0-370511983D1C" controlTypeID="Image" x="0" y="12" w="400" h="75" zOrder="0">
+                  <URL>0DEF173AF4F34755EADB7AE59B5CA8B4.png</URL>
+                </control>
+                <control controlID="72C42F78-C35F-49A6-A9B3-21A4777FF7DC" controlTypeID="TextArea" x="426" y="0" w="294" h="99" zOrder="1">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>Zach+is+Team+Charlie's+Front+End+and+UXD+Specialist.+Co-Developer+of+Steam+Match+Machine+and+Cat+Calling.+%0D%0ALikes%3A+Sleep+and+Games.+%0D%0ADislikes%3A+Sleep+and+Snow</text>
+                  <textColor>4278255615</textColor>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="671075BF-75BB-4EF1-A1CC-9DEF7FF56418" controlTypeID="Border" x="0" y="0" w="727" h="104" zOrder="2">
+                  <alias>borderLayer</alias>
+                </control>
+              </groupChildrenDescriptors>
+              <thinkness>1</thinkness>
+            </control>
+            <control controlID="755F87A1-AF48-4792-858F-775E61A7B876" controlTypeID="Panel" x="30" y="166" w="727" h="104" zOrder="1">
+              <color>4281545523</color>
+              <groupChildrenDescriptors>
+                <control controlID="58745802-54D3-47BE-A13C-D5AAC7ACFEBC" controlTypeID="TextArea" x="426" y="0" w="294" h="99" zOrder="0">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>Louis's+info</text>
+                  <textColor>4278255615</textColor>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="55D9C118-03CD-473D-9694-5608198A0181" controlTypeID="Image" x="0" y="0" w="113" h="99" zOrder="1"/>
+                <control controlID="79A6FE6C-EDCA-4B1F-B9D5-B8DFAFAA33F5" controlTypeID="Border" x="0" y="0" w="727" h="104" zOrder="2">
+                  <alias>borderLayer</alias>
+                </control>
+              </groupChildrenDescriptors>
+              <thinkness>1</thinkness>
+            </control>
+            <control controlID="D2FAB4E7-AB0B-4079-A01A-20D3AC4AE5F9" controlTypeID="Panel" x="30" y="310" w="727" h="104" zOrder="2">
+              <color>4281545523</color>
+              <groupChildrenDescriptors>
+                <control controlID="6A41377C-CD48-4BD6-A7E0-8CF8008629CD" controlTypeID="TextArea" x="426" y="0" w="294" h="99" zOrder="0">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>Alina's+info</text>
+                  <textColor>4278255615</textColor>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="7984BAF8-B426-454D-891A-188589706672" controlTypeID="Image" x="0" y="0" w="113" h="99" zOrder="1"/>
+                <control controlID="799F965E-B6B9-4AD6-8096-D28DD3C92218" controlTypeID="Border" x="0" y="0" w="727" h="104" zOrder="2">
+                  <alias>borderLayer</alias>
+                </control>
+              </groupChildrenDescriptors>
+              <thinkness>1</thinkness>
+            </control>
+            <control controlID="F4479F75-CC9C-4683-9172-FB4A6111D2D4" controlTypeID="Panel" x="30" y="435" w="389" h="400" zOrder="3">
+              <color>4288256409</color>
+              <groupChildrenDescriptors>
+                <control controlID="0BEE1CC1-6797-401F-905E-00653804B508" controlTypeID="TextArea" x="10" y="70" w="371" h="198" zOrder="0">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>Praesent+suscipit+consequat+neque%2C+eu+maximus+nunc+cursus+sed.+Duis+sollicitudin+massa+in+diam+molestie+accumsan.+Ut+ullamcorper+hendrerit+euismod.+Aenean+et+varius+purus.+Lorem+ipsum+dolor+sit+amet%2C+consectetur+adipiscing+elit.+Sed+euismod+pretium+lacinia.+Vestibulum+posuere+consectetur+tincidunt.+In+sed+erat+eu+ante+aliquam+sagittis+vitae+eget+ipsum.+In+ac+vulputate+mauris.+Aenean+sollicitudin%2C+lorem+a+semper+ultrices%2C+nisi+arcu+pulvinar+est%2C+sed+sagittis+lorem+eros+mattis+augue.+In+non+condimentum+enim%2C+ut+bibendum+nibh.%0D%0A</text>
+                  <textColor>4278255615</textColor>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="FFB6A63F-1074-467F-BA3A-8941D13749BC" controlTypeID="Label" x="91" y="10" w="169" h="38" zOrder="1">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>About+Project</text>
+                  <textColor>4278255615</textColor>
+                  <textSize>28</textSize>
+                  <lineSpacing>0</lineSpacing>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="8F97E3F6-D052-4966-9003-F3BAA32C5C24" controlTypeID="Border" x="0" y="0" w="389" h="400" zOrder="2">
+                  <alias>borderLayer</alias>
+                </control>
+              </groupChildrenDescriptors>
+              <thinkness>1</thinkness>
+            </control>
+            <control controlID="D8F67FF2-A2B5-49FF-BBC8-BEED91DE3C1E" controlTypeID="Panel" x="454" y="435" w="389" h="400" zOrder="4">
+              <color>4288256409</color>
+              <groupChildrenDescriptors>
+                <control controlID="C7E86A11-A238-4690-924F-BE64480D02B8" controlTypeID="TextArea" x="9" y="70" w="370" h="95" zOrder="0">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>Praesent+suscipit+consequat+neque%2C+eu+maximus+nunc+cursus+sed.+Duis+sollicitudin+massa+in+diam+molestie+accumsan.+Ut+ullamcorper+hendrerit+euismod.+Aenean+et+varius+purus.+Lorem+ipsum+dolor+sit+amet%2C+consectetur+adipiscing+elit.+Sed+euismod+pretium+lacinia.+Vestibulum+posuere+consectetur+tincidunt.+In+sed+erat+eu+ante+aliquam+sagittis+vitae+eget+ipsum.+In+ac+vulputate+mauris.+Aenean+sollicitudin%2C+lorem+a+semper+ultrices%2C+nisi+arcu+pulvinar+est%2C+sed+sagittis+lorem+eros+mattis+augue.+In+non+condimentum+enim%2C+ut+bibendum+nibh.%0D%0A</text>
+                  <textColor>4278255615</textColor>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="3A62F811-2645-4A78-8BED-AD0DD22A9645" controlTypeID="Label" x="127" y="10" w="103" h="38" zOrder="1">
+                  <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+                  <text>Location</text>
+                  <textColor>4278255615</textColor>
+                  <textSize>28</textSize>
+                  <lineSpacing>0</lineSpacing>
+                  <useDefaultTextSize>False</useDefaultTextSize>
+                  <selectedIndex>-1</selectedIndex>
+                </control>
+                <control controlID="D45DF748-273E-47B3-9A9A-80044D228FFC" controlTypeID="Image" x="0" y="220" w="389" h="180" zOrder="2">
+                  <URL>B319E4F1D361CFBBAD0E83411130F37F.PNG</URL>
+                </control>
+                <control controlID="EEFA16F1-4D81-4BFE-BE15-DB8327722F54" controlTypeID="Border" x="0" y="0" w="389" h="400" zOrder="3">
+                  <alias>borderLayer</alias>
+                </control>
+              </groupChildrenDescriptors>
+              <thinkness>1</thinkness>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="3C1ACC32-3126-4186-A0D4-8EB5AE5798CD" controlTypeID="Border" x="0" y="0" w="797" h="469" zOrder="1">
+          <color>4284900966</color>
+          <borderColor>4278190080</borderColor>
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <canHoriScroll>True</canHoriScroll>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

@@ -1,0 +1,79 @@
+@model dynamic
+    <title>Home :: Steam Match Machine</title>
+  <body>
+    <h1>Home</h1>
+    <div>Welcome to Steam Match Machine!</div>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        @* <!-- Indicators --> *@
+        <ul class="carousel-indicators">
+            @{
+                bool indFirst = true;
+                var count = 0;
+            }
+            @foreach(var item in Model.TopSellers)
+            {   
+                <li data-target="#demo" data-slide-to="@count" class ='@(indFirst == true ? "active" : "")'></li>
+                indFirst = false;
+                count++;
+            }
+        </ul>
+
+        @* <!-- The slideshow --> *@
+        <div class="carousel-inner">
+            @{
+                bool isFirst = true;
+            }
+            @foreach(var item in Model.TopSellers)
+            {   
+                <div class ='carousel-item @(isFirst == true ? "active" : "")' style="background-image: url(@item.large_capsule_image);">
+                    <img src="@item.large_capsule_image">
+                    <a class="stretched-link" asp-controller="Home" asp-action="Game" asp-route-id="@item.id"></a>
+                </div>
+                isFirst = false;
+            }
+        </div>
+
+        @* <!-- Left and right controls --> *@
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div id="main">
+        <ul class="idTabs">
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#rec">Recommended</a></li>
+        </ul>
+        <div id="featured">
+            @foreach(var item in Model.FeaturedGames)
+            {   
+                <div class ="game-card-mini">
+                    @{
+                         var message = "<span class='bluefont'>Free!</span>";
+                    }
+                    <img class = "videogame-cover-mini" src="@item.small_capsule_image"></img>
+                        <h4 class="game-title-mini">@item.name</h4>
+                        <p class="price-mini">@(item.final_price > 0 ? "$" + item.final_price : Html.Raw(message))</p>
+                        <a class="stretched-link" asp-controller="Home" asp-action="Game" asp-route-id="@item.id"></a>
+                </div>
+            }
+        </div>
+        <div id="rec">
+            @foreach(var item in Model.RecGames)
+            {   
+                <div class ="game-card-mini">
+                    <img class = "videogame-cover-mini" src="@item.header_image"></img>
+                        <h4 class="game-title-mini">@item.name</h4>
+                        <p class="price-mini">@item.final_formatted</p>
+                        <p class="description-mini">@item.ProductLink</p>
+                </div>
+            }
+        </div>
+    </div>
+  </body>
+</html>

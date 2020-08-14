@@ -1,0 +1,819 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* - Universal Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+html {
+    height: auto;
+}
+
+body {
+    height: auto;
+    font-family: "Lucida Grande", "Lucida Sans", Verdana, sans-serif;
+    font-size: 12px;
+    background-image: linear-gradient(0deg, rgb(24, 78, 179) 7%, rgb(94, 92, 88) 64%);
+    background-attachment: fixed;
+}
+
+.header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    margin: 30px;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Gill Sans", "Gill Sans MT", "Cantarell", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #365f96;
+}
+
+h1 {
+    font-size: 20px;
+    color: #eeeaea;
+}
+
+h2 {
+    font-size: 18px;
+    color: #eeeaea;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+    text-transform: none !important;
+}
+
+h6 {
+    font-size: 10px;
+    text-transform: none !important;
+}
+
+p {
+    color: #eeeaea;
+}
+
+/* - Nav ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+a.navbar-brand {
+    color: #ecc0e5;
+}
+
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.nav {
+    clear: both;
+}
+
+.nav-right {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+a.nav-item {
+    color: #eeeaea;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+a.nav-right {
+    color: #eeeaea;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.nav-text {
+    color: #eeeaea;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #eeeaea;
+    width: 15%;
+    height: 40%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownNavLink {
+    color: #463e3f;
+    padding-left: 30%;
+    padding-top: 60%;
+}
+
+/* Show the dropdown menu on hover */
+div#dropdown:hover .dropdownMenu {
+    display: block;
+}
+
+
+/* - Footer ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#footer-spacer {
+    margin: 8px auto 0px auto;
+    height: 67px;
+}
+
+div#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+    background-color: #000000;
+    border-top: 2px solid #0F58A7;
+    height: 65px;
+    z-index: 10;
+    width: 100%;
+    padding: 0px !important;
+}
+
+div#footer div {
+    width: 1000px;
+    margin: 0px auto 0px auto;
+    height: 65px;
+    position: relative;
+}
+
+div#footer span#copyright {
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    display: block;
+    font-size: 10px;
+    text-align: right;
+}
+
+div#footer span#copyright a {
+    font-family: Arial;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+div#footer span#disclaimer {
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    display: block;
+    font-size: 10px;
+}
+
+div#footer span#disclaimer a {
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+/* - Index Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*Carousel Styles*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2338D4F5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2338D4F5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    /* any dimensions are fine, it can be responsive with max-width */
+    width: 600px;
+    height: 300px;
+}
+
+.carousel-inner {
+    /* make sure your .items will get correct height */
+    height: 100%;
+}
+
+.item {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.item img {
+    visibility: hidden;
+}
+
+/*Tab Table Styles*/
+
+#main {
+
+    background: rgb(85, 84, 80);
+    background: linear-gradient(0deg, rgb(63, 62, 58) 32%, rgb(94, 101, 105) 83%);
+    color: #111;
+    padding: 15px 20px;
+    width: 600px;
+    border: 1px solid #222;
+    margin: 8px auto;
+}
+
+#main>li,
+#main>ul>li {
+    list-style: none;
+    float: left;
+}
+
+#main ul a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none !important;
+    margin: 1px;
+    margin-left: 0;
+    color: #FFF;
+    background: #444;
+}
+
+#main ul a:hover {
+    color: #FFF;
+    background: #111;
+}
+
+#main ul a.selected {
+    margin-bottom: 0;
+    color: #000;
+    background: snow;
+    border-bottom: 1px solid snow;
+    cursor: default;
+}
+
+#main div {
+    position: relative;
+    background: rgb(85, 84, 80);
+    background: linear-gradient(0deg, rgb(63, 62, 58) 32%, rgb(94, 101, 105) 83%);
+    padding: 10px 10px 8px 10px;
+    *padding-top: 3px;
+    *margin-top: -15px;
+    clear: left;
+    height: 300px;
+}
+
+#main div a {
+    color: #000;
+    font-weight: bold;
+}
+
+#rec {
+    overflow: scroll;
+}
+
+#featured {
+    overflow: scroll;
+}
+
+.game-card-mini {
+    max-height: 33%;
+    max-width: 98%;
+    border: .5px solid #b7beec;
+    margin-bottom: 4px;
+}
+
+.videogame-cover-mini {
+    width: 231px;
+    height: 73px;
+    margin-right: 10px;
+    float: left;
+}
+
+.game-title-mini {
+    color: #eeeaea;
+    size: 14px;
+    font-weight: bolder;
+    padding-left: 100px;
+}
+
+.price-mini {
+    size: 10px;
+    padding-left: 100px;
+}
+
+.description-mini {
+    font-size: 9px;
+    padding-left: 100px;
+    overflow-wrap: break-word;
+}
+
+.bluefont {
+    color: #1E90FF;
+}
+
+/* - Quiz Page Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+#title {
+    text-align: center;
+}
+
+#quiz {
+    text-indent: 30px;
+    display: none;
+}
+
+.button {
+    flex: 1;
+    text-align: center;
+    width: 10%;
+    float: right;
+    background-color: #6cb5f3;
+    border: 0;
+    margin: 5px;
+    padding: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button.active {
+    background-color: #6BA5D6;
+    transition: all .3s;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+#quizcontainer {
+    width: 75%;
+    margin-left: auto;
+    padding: 0 25px 40px 10px;
+    background-color: #1E90FF;
+    border: 4px solid #B0E0E6;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #888;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#prev {
+    display: none;
+}
+
+#start {
+    display: none;
+    width: 90px;
+}
+
+/* - Profile Page Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#gameBoxes {
+    width: 100%;
+    padding: 50px;
+}
+
+#gameBoxes h1 {
+    text-align: -webkit-center;
+}
+
+#recs,
+#wishList {
+    height: 500px;
+    width: 400px;
+    background-color: #444;
+    border-style: solid;
+    border-color: #000;
+}
+
+#recs {
+    float: left;
+}
+
+.game-card-profile {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    border: .5px solid #b7beec;
+}
+
+.videogame-cover-profile {
+    float: left;
+}
+
+.game-title-profile {
+    padding-left: 5px;
+    text-align: start;
+    color: #eeeaea;
+    size: 14px;
+    font-weight: bolder;
+}
+
+.price-profile {
+    text-align: start;
+    size: 10px;
+}
+
+.description-profile {
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+#wishList {
+    float: right;
+}
+
+.title {
+    overflow: auto;
+    min-height: 100%;
+    height: -webkit-fill-available;
+    text-align: center;
+    padding: 10px;
+    border-style: outset;
+    border-color: darkcyan;
+}
+
+.title h3 {
+    color: cadetblue;
+}
+
+/* - Recommendations Page Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+h2.recommendations-title {
+    text-align: center;
+    color: #eeeaea;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.game-container {
+    position: relative;
+    background-color: #000000;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+.game-card {
+    position: relative;
+    text-align: center;
+    background-color: #463e3f;
+    height: 230px;
+    width: 100%;
+    float: left;
+    border: 2px solid #b7beec;
+}
+
+img.videogame-cover {
+    height: 225px;
+    width: 300px;
+    float: left;
+}
+
+h4.game-title {
+    color: #eeeaea;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+p.price {
+    color: #eeeaea;
+    height: 10%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+p.description {
+    color: #eeeaea;
+    margin-left: 350px;
+    margin-right: 50px;
+}
+
+span.game-tag {
+    color: #1E90FF;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+div.whoops {
+    border-style: ridge;
+    border-color: darkcyan;
+    background-color: #222;
+    width: 500px;
+    height: 100px;
+    margin: auto;
+}
+
+/* - Game Page Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.aboutGame strong,
+* {
+    color: white;
+}
+
+#add_to_wishlist_area,
+#add_to_wishlist_area_success,
+#add_to_wishlist_area_fail {
+    display: inline-block;
+    position: relative;
+}
+
+.queue_actions_ctn .btn_medium {
+    margin-bottom: 4px;
+}
+
+.queue_control_button {
+    display: inline-block;
+    float: left;
+    margin: 15px;
+}
+
+#add_to_wishlist_area {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.btnv6_blue_hoverfade {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba(103, 193, 245, 0.2);
+}
+
+.btn_medium>span,
+input.btn_medium {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.btnv6_blue_hoverfade>span {
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+}
+
+.game_area_wishlist_btn img,
+.btnv6_blue_hoverfade.queue_btn_active img {
+    vertical-align: middle;
+    margin-left: -6px;
+    margin-top: -2px;
+    margin-right: 3px;
+}
+
+#add_to_wishlist_area_fail .wishlist_fail_temp_notice {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background: #bbc9d3;
+    z-index: 2;
+    padding: 16px;
+    width: 200px;
+    box-shadow: 2px 2px 10px #000;
+    color: #222;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+#add_to_wishlist_area_fail .wishlist_fail_temp_notice:after {
+    bottom: 100%;
+    left: 40px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #bbc9d3;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+/* - About Page Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#content-area {
+    width: 1000px;
+    margin: 41px auto 0px auto;
+    overflow: hidden;
+}
+
+div.content-box {
+    float: left;
+    overflow: hidden;
+    width: 1000px;
+    margin: 20px 0px 0px 0px;
+}
+
+div.content-box div.content-box-topbar-large {
+    line-height: 72px;
+    height: 72px;
+    background-image: url(../lib/images/point-big.png);
+    background-position: 21px 28px;
+    background-repeat: no-repeat;
+    background-color: #060707;
+    background-color: rgba(0, 0, 0, .8);
+    position: relative;
+}
+
+div.content-box div.content-box-topbar-large span.left {
+    position: absolute;
+    left: 50px;
+    font-family: League Gothic, Arial;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h1.empty {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0px;
+    padding: 0px;
+    font-family: inherit;
+}
+
+h2.empty {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0px;
+    padding: 0px;
+    font-family: inherit;
+}
+
+div.content-box div.content-box-topbar {
+    line-height: 36px;
+    height: 36px;
+    background-image: url(../lib/images/point-small.png);
+    background-position: 11px 14px;
+    background-repeat: no-repeat;
+    background-color: #060707;
+    background-color: rgba(0, 0, 0, .8);
+    position: relative;
+}
+
+div.content-box div.content-box-topbar span.left {
+    position: absolute;
+    left: 25px;
+    font-family: League Gothic, Arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+div.content-box div.content-box-split {
+    position: relative;
+    margin: 2px 0px 0px 0px;
+    overflow: hidden;
+}
+
+div.content-box-team div.content-box-split .left {
+    height: 180px;
+    background-color: #18191B;
+    background-color: rgba(0, 0, 0, .3);
+    display: block;
+}
+
+div.content-box div.content-box-split .left {
+    width: 49%;
+    width: calc(50% - 1px);
+    background-color: #18191B;
+    background-color: rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+}
+
+div.content-box-team div.content-box-split .right {
+    height: 180px;
+    background-color: #18191B;
+    background-color: rgba(0, 0, 0, .3);
+    display: block;
+}
+
+div.content-box div.content-box-split .right {
+    width: 49%;
+    width: calc(50% - 1px);
+    background-color: #18191B;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a img {
+    border: 0px;
+}
+
+div.content-box-team div.content-box-split span.team-info {
+    font-size: 10px;
+    color: #B0B0B0;
+    position: absolute;
+    top: 24px;
+    left: 48px;
+}
+
+div.content-box-team div.content-box-split img.team-image {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+}
+
+div.content-box-team div.content-box-split span.team-info span.team-name {
+    color: #FFFFFF;
+}
+
+div.content-box-team {
+    margin: 2px 0px 0px 0px;
+}
+
+/* - Form Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.formLabel {
+    color: #eeeaea;
+}
+
+.newLink {
+    color: #eeeaea;
+}
+
+/* - Admin Video Games Page Styles ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+a.addButton {
+    color: rgb(35, 134, 202);
+    size: 16px;
+}
+
+table.adminTable {
+    width: 60%;
+}
+
+th {
+    height: 50px;
+    vertical-align: bottom;
+    color: #eeeaea;
+    size: 16px;
+}
+
+td {
+    border-bottom: 1px solid #b7beec;
+    height: 50px;
+    vertical-align: bottom;
+    color: #eeeaea;
+}

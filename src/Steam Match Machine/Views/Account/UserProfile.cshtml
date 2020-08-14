@@ -1,0 +1,37 @@
+@model UserProfileViewModel
+<title>UserProfile</title>
+  <body>
+    <div class="overflow-auto" id="gameBoxes">
+      <h1>@User.Identity.Name's Profile</h1>
+      <div class="overflow-auto" id="recs">
+          <div class="title">
+            <h3>Recommendations</h3>
+            @foreach(var item in Model.Recs)
+            {   
+               <div class ="game-card-profile">
+                  <img class = "videogame-cover-profile" src="@item.thumbnail_img"></img>
+                      <h4 class="game-title-profile">@item.name</h4>
+                      <p class="price-profile">@item.final_formatted</p>
+                      <a class="stretched-link" asp-controller="Home" asp-action="Game" asp-route-id="@item.steam_appid"></a>
+                </div>
+            }
+          </div>
+      </div>
+      <div class="overflow-auto" id="wishList">
+          <div class="title">
+            <h3>Wish List</h3>
+            @foreach(var item in Model.Wishlist)
+            {   
+               <div class ="game-card-profile">
+                  <img class = "videogame-cover-profile" src="@item.thumbnail_img"></img>
+                      <h4 class="game-title-profile">@item.name</h4>
+                      <p class="price-profile">@item.final_formatted</p>
+                      <a class="stretched-link" asp-controller="Home" asp-action="Game" asp-route-id="@item.steam_appid"></a>
+                </div>
+            }
+          </div>
+      </div>
+    </div>
+      
+  </body>
+</html>

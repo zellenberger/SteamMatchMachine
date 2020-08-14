@@ -1,0 +1,100 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="BFD73C31-4ADD-4057-8D25-924C43E9638E" platform="MtDesktop" defaultW="800" defaultH="600" measureW="800" measureH="600" mobileScreenScale="0">
+  <controls controlCount="9">
+    <control controlID="C2F42EAF-36DA-43BD-9081-F69627E50403" controlTypeID="BrowserWindow" x="0" y="0" w="800" h="600" zOrder="0">
+      <locked>True</locked>
+      <color>4284900966</color>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+      <text>Mockplus%0D%0Ahttps%3A%2F%2Fwww.mockplus.com</text>
+      <textVAlign>VaTop</textVAlign>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="E063EB79-0AEC-443C-9F11-08BAFF41FAB1" controlTypeID="ButtonBar" x="3" y="72" w="793" h="30" zOrder="1">
+      <color>4279723958</color>
+      <borderColor>39372</borderColor>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="F18AA0C1-D71F-4C56-B864-A0EB9D61566D" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{9925F6D3-B192-4B53-A029-979411526B4A}" coords="(0.5,0.5,159.5,29.5)"/>
+        </link>
+        <link targetPageID="CCE3C864-7EF6-4ECD-B7BA-2690E76F777C" linkType="ltPageLink" isApplyIncludePage="False" title="Quiz">
+          <area shape="0" alt="" ID="{1BB63614-37BE-4D6D-88AE-41BA5016831E}" coords="(159.5,0.5,318.5,29.5)"/>
+        </link>
+        <link targetPageID="BFD73C31-4ADD-4057-8D25-924C43E9638E" linkType="ltPageLink" isApplyIncludePage="False" title="Recommendations">
+          <area shape="0" alt="" ID="{2F950248-CAC0-4F0E-8E3F-EA6FE2FA7759}" coords="(318.5,0.5,477.5,29.5)"/>
+        </link>
+        <link targetPageID="AD2BFED3-FC81-46E8-AA44-19B6ED547FD0" linkType="ltPageLink" isApplyIncludePage="False" title="About">
+          <area shape="0" alt="" ID="{CDDAA94D-D171-4318-BC27-0121C1299365}" coords="(477.5,0.5,636.5,29.5)"/>
+        </link>
+        <link targetPageID="9A6FBF4F-2FA6-4B27-940A-62BFF5ECA453" linkType="ltPageLink" isApplyIncludePage="False" title="SteamSignin">
+          <area shape="0" alt="" ID="{D70413F4-60BB-42A0-9D43-BE5F7CA839CC}" coords="(636.5,0.5,792.5,29.5)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+      <text>Home%2CQuiz%2CRecommendations%2CAbout%2CSteamSignin</text>
+      <textColor>4294967295</textColor>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="865FCF52-F834-416D-BDED-BA36C490BAE3" controlTypeID="ScrollView" x="32" y="112" w="748" h="449" zOrder="2">
+      <color>4288256409</color>
+      <groupChildrenDescriptors>
+        <control controlID="18EFAA1A-A9C5-4160-BC5C-45E8DD97E473" controlTypeID="ScrollViewContentPanel" x="0" y="0" w="801" h="564" zOrder="0">
+          <alias>contentPanel</alias>
+          <groupChildrenDescriptors>
+            <control controlID="708BBB66-4ED3-4644-9726-B8AF3211F96C" controlTypeID="Image" x="11" y="90" w="429" h="449" zOrder="0">
+              <URL>BA7BF5357A10840982DF067E02E825AD.PNG</URL>
+            </control>
+            <control controlID="44DBD103-A07C-42F4-B700-636419B3633B" controlTypeID="TextInput" x="11" y="35" w="429" h="55" zOrder="1">
+              <color>4281545523</color>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>Your+Current+Recs%3A</text>
+              <textColor>4282501083</textColor>
+              <textSize>28</textSize>
+              <textAlign>HaCenter</textAlign>
+              <lineSpacing>0</lineSpacing>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="A06247B6-70A9-4145-B659-9C8620DFD6F8" controlTypeID="TextArea" x="491" y="29" w="289" h="114" zOrder="2">
+              <color>4281545523</color>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>Want+to+generate+new+recommendations%3F+Take+another+Quiz!</text>
+              <textColor>4282501083</textColor>
+              <textSize>24</textSize>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="DF31A3FC-17A8-428E-B27A-035CA4CBCC68" controlTypeID="Button" x="491" y="143" w="93" h="35" zOrder="3">
+              <color>4281545523</color>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="CCE3C864-7EF6-4ECD-B7BA-2690E76F777C" linkType="ltPageLink" isApplyIncludePage="False" title="Quiz">
+                  <area shape="0" alt="" ID="{76A28FA7-A6A8-4F8E-891C-7AFE584E03C8}" coords="(0,0,93,35)"/>
+                </link>
+              </links>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>Take+Quiz</text>
+              <textColor>4282501083</textColor>
+              <textSize>18</textSize>
+              <lineSpacing>0</lineSpacing>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+              <radius>4</radius>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="F679B4F7-5FD6-491F-8E88-7BB636F16603" controlTypeID="Border" x="0" y="0" w="748" h="449" zOrder="1">
+          <color>4284900966</color>
+          <borderColor>4278190080</borderColor>
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <canHoriScroll>True</canHoriScroll>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

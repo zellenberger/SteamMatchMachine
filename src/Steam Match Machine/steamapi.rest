@@ -1,0 +1,24 @@
+###
+# Pulls featured games from steam.
+GET https://store.steampowered.com/api/featured/
+###
+
+###
+# Pulls all categories of games from steam store page.
+GET http://store.steampowered.com/api/featuredcategories/
+###
+
+###
+# Pulls only games (just names and ids) from steam.
+GET https://api.steampowered.com/IStoreService/GetAppList/v1?include_games=1&max_results&key=487101527DD3C5B291B952452C9801D6
+###
+
+###
+# Pulls specific game from steam with in depth details.
+GET  http://store.steampowered.com/api/appdetails?appids=1174180
+###
+
+###
+# Pulls specific game thumbnail.
+GET  https://steamcdn-a.akamaihd.net//steam//apps//1174180//capsule_184x69.jpg
+###

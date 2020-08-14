@@ -1,0 +1,18 @@
+@using Steam_Match_Machine.Models;
+@model VideoGame
+
+<h2>Delete Video Game Confirm</h2>
+
+<div class="form-horizontal">
+
+    <form method="POST">
+        <input type="hidden" asp-for="steam_appid" />
+        <div class="form-group">
+            <label class="formLabel">@Model.name</label>
+        </div>
+
+        <p>
+            <button type="submit" class="btn btn-danger" role="button">Delete</button>
+        </p>
+    </form>
+</div>

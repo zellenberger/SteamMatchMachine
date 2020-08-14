@@ -1,0 +1,19 @@
+@using Steam_Match_Machine.Models;
+@model IEnumerable<VideoGame>
+<div>
+    <p>
+        <a class="addButton" asp-controller="admin" asp-action="AddVideoGame" class="addButton" role="button">Add Video Game</a>
+    </p>
+    <table class="adminTable">
+        <tr>
+            <th class="gameTitle">Title</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.name</td>
+                <td><a asp-controller="admin" asp-action="deletevideogame" asp-route-id="@item.steam_appid">Delete</a> </td>
+            </tr>
+        }
+    </table>
+</div>

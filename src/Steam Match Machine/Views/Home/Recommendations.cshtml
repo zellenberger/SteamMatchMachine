@@ -1,0 +1,55 @@
+@model IEnumerable<VideoGame>
+
+<title>Recommendations :: Steam Match Machine</title>
+<div>
+    <form method="GET" class="form-inline">
+        <div class="form-group mb-2 mr-2">
+            <input type="hidden" name="sort" value='@Context.Request.Query["sort"]' />
+            <input type="text" name="filter" class="form-control" value='@Context.Request.Query["filter"]' />
+        </div>
+        <div class="form-group mb-2 mr-2">
+            <button type="submit" class="btn btn-secondary" role="button">Search</button>
+        </div>
+        <div class="form-group mb-2">
+            <a asp-controller="Home" asp-action="Recommendations" class="btn btn-outline-secondary" role="button">Reset</a>
+        </div>
+    </form>
+    <div>
+        <p>Sort by: <a asp-controller="Home" asp-action="Recommendations" asp-route-filter='@Context.Request.Query["filter"]' asp-route-sort='@ViewData["TitleSortParm"]'>Title</a>     <a asp-controller="Home" asp-action="Recommendations" asp-route-filter='@Context.Request.Query["filter"]' asp-route-sort='@ViewData["PriceSortParm"]'>Price</a></p>
+    </div>
+    <div class="game-container">
+        <h2 class="recommendations-title">Your Current Recs:</h2>
+        @if(User.Identity.IsAuthenticated)
+        {
+            @if(Model != null){
+                @foreach(var item in Model)
+                {
+                        <div class = "game-card">
+                          <img class = "videogame-cover" src="@item.header_image"></img>
+                            <h4 class="game-title">@item.name</h4>
+                            <p class="price">@item.final_formatted</p>
+                            <p class="description">@item.short_description<br><br></p>
+                                @foreach (GameTagVideoGame gameTagVideo in item.GameTagVideoGames) {
+                                    <span class="game-tag">@gameTagVideo.GameTag.GameTagName</span>
+                                }
+                        <a class="stretched-link" asp-controller="Home" asp-action="Game" asp-route-id="@item.steam_appid"></a>
+                        </div>
+                }
+            }
+            else
+            {
+                <div class="whoops">
+                    <h4>Whoops!</h4>
+                    <p>Looks like you don't have any recommendations yet, please take a quiz to start getting recommended games.</p>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="whoops">
+                <h4>Whoops!</h4>
+                <p>You need to be logged in to use this feature, please log in or register an account to view your recommended games.</p>
+            </div>
+        }
+    </div>
+</div>

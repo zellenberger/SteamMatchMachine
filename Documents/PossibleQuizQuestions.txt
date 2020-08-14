@@ -1,0 +1,30 @@
+Quiz Page Questions:
+
+Left Both Right
+
+I like a game with violence	vs	I like a game without violence
+
+I like to control a character	vs	I like to control an interface
+
+I like to solve puzzles 	vs	I like to engage in combat
+
+I like to explore a big world	vs	I like a linear path
+
+I like third person experiences vs	I like a first person Experience
+
+I like magic in a game		vs	I prefer realism without magic in a game
+
+I like a focus on story		vs	I like a focus on gameplay
+
+I like turn based gameplay	vs 	I like real time gameplay
+
+I like competetive gameplay	vs	I like cooperative gameplay
+
+I like playing with friends	vs	I like a solo experience
+
+I like two dimensional games	vs	I like three dimensional games
+
+I like a handcrafted environment vs	I like procedurally generated worlds
+
+I like a set difficulty		vs 	I like a difficulty setting I can choose from
+

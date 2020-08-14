@@ -1,0 +1,30 @@
+<div class="header"><img src="@Url.Content("../lib/images/logo3.png")" alt="Logo"></div>
+
+    <nav class="navbar navbar-expand-md" style="background-color: #1767B6;">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="~/" class="nav-item nav-link active">Home</a>
+                    <a href="~/Quiz" class="nav-item nav-link">Quiz</a>
+                    <a href="~/Recommendations" class="nav-item nav-link">Recommendations</a>
+                    <a href="~/About" class="nav-item nav-link">About</a>
+                    @if(User.IsInRole("Admin")) {
+                        <div id="dropdown">
+                            <a class="nav-item nav-link" href="#">Admin
+                            <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdownMenu">
+                                <a asp-controller="Admin" asp-action="VideoGames" class="dropdownNavLink" role="button">Video Games</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!--end navbar-right -->   
+            <partial name="_LoginPartial" />
+            </div>
+            <!--end container -->
+        </div>
+    </nav>

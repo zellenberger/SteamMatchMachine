@@ -1,0 +1,108 @@
+@model GameDetailsResponse
+@if (Model != null)
+{
+    <h3>@Model.data.name</h3>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        @* <!-- Indicators --> *@
+        <ul class="carousel-indicators">
+            @{
+                bool indFirst = true;
+                var count = 0;
+            }
+            @foreach(var item in Model.data.screenshots)
+            {   
+                <li data-target="#demo" data-slide-to="@count" class ='@(indFirst == true ? "active" : "")'></li>
+                indFirst = false;
+                count++;
+            }
+        </ul>
+
+        @* <!-- The slideshow --> *@
+        <div class="carousel-inner">
+            @{
+                bool isFirst = true;
+            }
+            @foreach(var item in Model.data.screenshots)
+            {   
+                <div class ='carousel-item @(isFirst == true ? "active" : "")' style="background-image: url(@item.path_thumbnail);">
+                    <img src="@item.path_thumbnail">
+                </div>
+                isFirst = false;
+            }
+        </div>
+
+        @* <!-- Left and right controls --> *@
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="info">
+        <div class="aboutGame">
+            @Html.Raw(Model.data.about_the_game);
+        </div>
+        <div class="gameOptions">
+            @{
+                var id = "https://store.steampowered.com/app/" + @Model.data.steam_appid;
+            }
+
+            <a href='@string.Format(@id)' target="_blank" rel="noreferrer">
+                <div class="queue_control_button queue_btn_store" >
+                    <div class="btnv6_blue_hoverfade btn_medium queue_btn_inactive" style="" data-tooltip-text="Follow this item to see announcements in your community activity feed.">
+                        <span>Steam Page</span>
+                    </div>
+                </div>
+            </a>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+
+                @if (Model.InWishlist == true)
+                {
+                    <div id="add_to_wishlist_area_success">
+                        <a class="btnv6_blue_hoverfade btn_medium queue_btn_active" data-tooltip-text="This product is already on your wishlist. Click to view your wishlist.">
+                            <span><img src="https://steamstore-a.akamaihd.net/public/images/v6/ico/ico_selected.png" border="0">On Wishlist</span>
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <form method="POST" asp-controller="home" asp-action="addtowishlist" asp-route-id="@Model.data.steam_appid">
+                        <div id="add_to_wishlist_area">
+                            <button type="submit" class="btnv6_blue_hoverfade btn_medium">
+                                <span>Add to your wishlist</span>
+                            </button>
+                        </div>
+                    </form>
+                }
+            }
+            else
+            {   
+                <div id="add_to_wishlist_area_fail">
+                    <button type="submit" class="btnv6_blue_hoverfade btn_medium">
+                        <span>Add to your wishlist</span>
+                    </button>
+                    <div class="wishlist_fail_temp_notice" id="fail" style="display: none;">
+                        Please <a href="~/sign-in">login</a> or <a href="~/Register">register</a> an account to do this!
+                    </div>
+                </div>
+            }
+
+            @if(@Model.data.price_overview != null)
+            {
+                <p>Price: @Model.data.price_overview.final_formatted</p>
+            }
+            else
+            {
+                <p>Price: <span class='bluefont'>Free!</span></p>
+            }
+        </div>
+    </div>
+}
+else
+{
+<p>No products have been found with that provided Id.</p>
+}

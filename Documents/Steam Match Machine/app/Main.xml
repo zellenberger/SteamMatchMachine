@@ -1,0 +1,83 @@
+﻿<project version="2.9" name="Steam Match Machine" ID="4FE2F548-5D1D-43A1-8611-E2BCA08ABDFF">
+  <params>
+    <pageParam version="5.3" minAllowVersion="5.3"/>
+    <projectParam version="2.9" minAllowVersion="2.9" platform="MtDesktop" pageSize="(800,600)" backgroundColor="4294967295" fontSize="0" fontFamily="" projectType="ptTeamProject" isShowTitleIndex="False"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="Index" ID="F18AA0C1-D71F-4C56-B864-A0EB9D61566D" expanded="True" code="5YFeBrrqjj" thumbCode="5YFeBrrqjj" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:18:50" modifieddate="2020-02-16 15:49:43" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060">
+      <images>
+        <image key="BFEB541DD511D21C0BA4C6003DD0D740.jpg"/>
+        <image key="BFDA5FFEA9A7112191365BD3335E3852.jpg"/>
+        <image key="D68195C9721AAE2D7DBBEF6562C4C2CB.jpg"/>
+        <image key="FDD4D31B0EC76FEE94854BDB146D35DE.jpg"/>
+        <image key="5B0F2A7EB6061089E50A95763549E6E7.png"/>
+        <image key="0C51952FC1381D74CDBA406DE3F8D491.jpg"/>
+        <image key="1620F84542E6848F3662C7B26870D620.png"/>
+        <image key="A2F0EBB10888DCCC52C9560D06D86CCA.jpg"/>
+        <image key="9AD1AA1788CE6A18D79C8D513848F17A.jpg"/>
+        <image key="609A969F664AA7E9C69C17CD70C8481A.jpg"/>
+        <image key="F8A708B621C2C75C3547A66A75248CA8.png"/>
+        <image key="EF4B2E7AF95660CAEBF35B852BFDEC45.jpg"/>
+        <image key="0067C6A49413ACF92B110049275AF256.png"/>
+        <image key="E5A01C487D6E01276D1AAB2606F1AF20.jpg"/>
+        <image key="A08280A44D2EE0D292F4507E294F9FB1.PNG"/>
+        <image key="160ADAA2EFA863E90AF6C4F3A22A138D.jpg"/>
+        <image key="1B882DA0FAC596F8A1EE596AFB15283B.jpg"/>
+      </images>
+    </page>
+    <page name="Quiz" ID="CCE3C864-7EF6-4ECD-B7BA-2690E76F777C" expanded="True" code="mNORAqBWjF" thumbCode="mNORAqBWjF" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:22:24" modifieddate="2020-02-16 14:09:40" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060">
+      <images>
+        <image key="D95E480717200F895E41DB6E5B869596.svg"/>
+        <image key="84E43FD667F4EA128EEFBAD7B03B51F5.svg"/>
+      </images>
+    </page>
+    <page name="Recommendations" ID="BFD73C31-4ADD-4057-8D25-924C43E9638E" expanded="True" code="tXRZWZc2bj" thumbCode="tXRZWZc2bj" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:24:57" modifieddate="2020-02-16 14:27:35" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060">
+      <images>
+        <image key="BA7BF5357A10840982DF067E02E825AD.PNG"/>
+      </images>
+    </page>
+    <page name="About" ID="AD2BFED3-FC81-46E8-AA44-19B6ED547FD0" expanded="True" code="5PJxnFiBdU" thumbCode="5PJxnFiBdU" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:25:14" modifieddate="2020-02-16 15:21:17" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060">
+      <images>
+        <image key="B319E4F1D361CFBBAD0E83411130F37F.PNG"/>
+        <image key="0DEF173AF4F34755EADB7AE59B5CA8B4.png"/>
+      </images>
+    </page>
+    <page name="User" ID="9A6FBF4F-2FA6-4B27-940A-62BFF5ECA453" expanded="True" code="sINwnI7YGY" thumbCode="sINwnI7YGY" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:25:09" modifieddate="2020-02-16 15:42:13" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060"/>
+  </pages>
+  <trash>
+    <page name="Page" ID="2A0DEB55-27EB-4683-9B53-B7C0959E1098" expanded="False" code="yiHmCw5uWT" thumbCode="7jSqyPT2B7" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:19:47" modifieddate="2020-02-12 18:19:56" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060"/>
+    <page name="Page" ID="BFC1B0EE-D477-4B26-A9F3-98F3BEFAB2DD" expanded="False" code="nE1EhO9Zyu" thumbCode="ENZrMjQQva" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True" author="196060" createdate="2020-02-12 18:33:34" modifieddate="2020-02-12 18:33:53" isdeleted="False" ismodified="True" syncversion="0" lasteditor="196060"/>
+  </trash>
+  <deletes>
+    <pages/>
+    <masters/>
+  </deletes>
+  <masters/>
+  <images>
+    <image key="BFEB541DD511D21C0BA4C6003DD0D740.jpg"/>
+    <image key="BFDA5FFEA9A7112191365BD3335E3852.jpg"/>
+    <image key="D68195C9721AAE2D7DBBEF6562C4C2CB.jpg"/>
+    <image key="FDD4D31B0EC76FEE94854BDB146D35DE.jpg"/>
+    <image key="5B0F2A7EB6061089E50A95763549E6E7.png"/>
+    <image key="0C51952FC1381D74CDBA406DE3F8D491.jpg"/>
+    <image key="1620F84542E6848F3662C7B26870D620.png"/>
+    <image key="A2F0EBB10888DCCC52C9560D06D86CCA.jpg"/>
+    <image key="9AD1AA1788CE6A18D79C8D513848F17A.jpg"/>
+    <image key="84E43FD667F4EA128EEFBAD7B03B51F5.svg"/>
+    <image key="D95E480717200F895E41DB6E5B869596.svg"/>
+    <image key="609A969F664AA7E9C69C17CD70C8481A.jpg"/>
+    <image key="F8A708B621C2C75C3547A66A75248CA8.png"/>
+    <image key="EF4B2E7AF95660CAEBF35B852BFDEC45.jpg"/>
+    <image key="0067C6A49413ACF92B110049275AF256.png"/>
+    <image key="0DEF173AF4F34755EADB7AE59B5CA8B4.png"/>
+    <image key="E5A01C487D6E01276D1AAB2606F1AF20.jpg"/>
+    <image key="A08280A44D2EE0D292F4507E294F9FB1.PNG"/>
+    <image key="160ADAA2EFA863E90AF6C4F3A22A138D.jpg"/>
+    <image key="1B882DA0FAC596F8A1EE596AFB15283B.jpg"/>
+    <image key="BA7BF5357A10840982DF067E02E825AD.PNG"/>
+    <image key="B319E4F1D361CFBBAD0E83411130F37F.PNG"/>
+  </images>
+  <enterprise syncid="" author="196060" syncversion="0" ismodified="True" createtime="2020-02-12 18:18:50" istitlemodified="False"/>
+</project>

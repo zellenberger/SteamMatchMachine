@@ -1,0 +1,35 @@
+@using Steam_Match_Machine.Models;
+@model VideoGame
+<h2>Edit Video Game</h2>
+
+<div class="form-horizontal">
+    <form method="post">
+        <div class="form-group">
+            <input type="hidden" asp-for="steam_appid" />
+            <input type="hidden" asp-for="header_image"/>
+            <label class="formLabel" asp-for="name"></label>
+            <input asp-for="name" class="form-control" />
+            <span asp-validation-for="name"></span>
+        </div>
+        <div class="form-group">
+            <label class="formLabel" asp-for="short_description"></label>
+            <input asp-for="short_description" class="form-control" />
+            <span asp-validation-for="short_description"></span>
+        </div>
+        <div class="form-group">
+            <label class="formLabel" asp-for="final_formatted"></label>
+            <input asp-for="final_formatted" class="form-control" />
+            <span asp-validation-for="final_formatted"></span>
+        </div>
+        <div class="form-group">
+            <label class="formLabel" asp-for="ProductLink"></label>
+            <input asp-for="ProductLink" class="form-control" />
+            <span asp-validation-for="ProductLink"></span>
+        </div>
+
+        <div asp-validation-summary="All"></div>
+        <p>
+            <button type="submit" class="btn btn-primary" role="button">Save</button>
+        </p>
+    </form>
+</div>

@@ -1,0 +1,18 @@
+@using Microsoft.AspNetCore.Identity
+
+@if(User.Identity.IsAuthenticated)
+{
+    <div class="nav navbar-nav navbar-right">
+        <span class="nav-text">
+            Hello,<a asp-controller="Account" asp-action="UserProfile" class="nav-right" role="button">@User.Identity.Name</a>
+        </span>
+            <a asp-controller="Account" asp-action="Logout" class="nav-right" role="button">Logout</a>
+    </div>
+}
+else {
+    <div class="nav-right">
+            <a asp-controller="Account" asp-action="Register" class="nav-right" role="button">Register</a>
+            <a asp-controller="Account" asp-action="Login" class="nav-right" role="button">Login</a>
+    </div>
+
+}

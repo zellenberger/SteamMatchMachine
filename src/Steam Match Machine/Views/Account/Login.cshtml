@@ -1,0 +1,33 @@
+@using Steam_Match_Machine.Models
+@model LoginViewModel
+
+<h2>Login</h2>
+
+<div class="form-horizontal">
+
+    <form method="post">
+        <div class="form-group">
+            <label class= "formLabel" asp-for="EmailAddress"></label>
+            <input asp-for="EmailAddress" class="form-control" />
+            <span asp-validation-for="EmailAddress"></span>
+        </div>
+        <div class="form-group">
+            <label class= "formLabel" asp-for="Password"></label>
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password"></span>
+        </div>
+
+        <div asp-validation-for="All"></div>
+
+        <p>
+            <button asp-controller="Account" asp-action="Login" type="submit" class="btn btn-primary" role="button">Login</button>
+             <a class= "newLink" asp-controller="Account" asp-action="Register">Create new account</a>
+        </p>
+    </form>
+
+    <div id="steam_login">
+              <p>Or Login with your Steam Account</p>
+							<a href="" class="login"><img src="https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png"></a>
+    </div>
+    
+</div>

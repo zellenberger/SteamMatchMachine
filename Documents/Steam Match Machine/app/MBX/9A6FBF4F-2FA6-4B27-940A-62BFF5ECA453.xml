@@ -1,0 +1,107 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="9A6FBF4F-2FA6-4B27-940A-62BFF5ECA453" platform="MtDesktop" defaultW="800" defaultH="600" measureW="800" measureH="600" mobileScreenScale="0">
+  <controls controlCount="13">
+    <control controlID="C2F42EAF-36DA-43BD-9081-F69627E50403" controlTypeID="BrowserWindow" x="0" y="0" w="800" h="600" zOrder="0">
+      <locked>True</locked>
+      <color>4284900966</color>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+      <text>Mockplus%0D%0Ahttps%3A%2F%2Fwww.mockplus.com</text>
+      <textVAlign>VaTop</textVAlign>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="DF215BD8-1B25-4B61-81A2-7FD8DE3835C8" controlTypeID="ButtonBar" x="3" y="72" w="793" h="30" zOrder="1">
+      <color>4279723958</color>
+      <borderColor>39372</borderColor>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="F18AA0C1-D71F-4C56-B864-A0EB9D61566D" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{C249B8C0-FC43-44BC-8624-F6D6C578D925}" coords="(0.5,0.5,159.5,29.5)"/>
+        </link>
+        <link targetPageID="CCE3C864-7EF6-4ECD-B7BA-2690E76F777C" linkType="ltPageLink" isApplyIncludePage="False" title="Quiz">
+          <area shape="0" alt="" ID="{DA720A73-3E87-4DBA-BC4E-94047B0146A6}" coords="(159.5,0.5,318.5,29.5)"/>
+        </link>
+        <link targetPageID="BFD73C31-4ADD-4057-8D25-924C43E9638E" linkType="ltPageLink" isApplyIncludePage="False" title="Recommendations">
+          <area shape="0" alt="" ID="{8E04E12B-F05B-49E5-A0DB-6C43C101C01A}" coords="(318.5,0.5,477.5,29.5)"/>
+        </link>
+        <link targetPageID="AD2BFED3-FC81-46E8-AA44-19B6ED547FD0" linkType="ltPageLink" isApplyIncludePage="False" title="About">
+          <area shape="0" alt="" ID="{CE7C6353-CD9E-4906-BE53-2EA7CFA71F15}" coords="(477.5,0.5,636.5,29.5)"/>
+        </link>
+        <link targetPageID="9A6FBF4F-2FA6-4B27-940A-62BFF5ECA453" linkType="ltPageLink" isApplyIncludePage="False" title="SteamSignin">
+          <area shape="0" alt="" ID="{96A630DD-61E5-419E-829D-40984E143B9F}" coords="(636.5,0.5,792.5,29.5)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+      <text>Home%2CQuiz%2CRecommendations%2CAbout%2CSteamSignin</text>
+      <textColor>4294967295</textColor>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="7511A5EA-1365-499D-B30B-0B56F0C69BA0" controlTypeID="Panel" x="12" y="119" w="401" h="206" zOrder="2">
+      <color>4291611852</color>
+      <groupChildrenDescriptors>
+        <control controlID="D5A1AFFA-C565-4E0E-B5CA-CA393959A8F6" controlTypeID="Image" x="0" y="0" w="117" h="108" zOrder="0"/>
+        <control controlID="56641285-CFFA-4955-B2F6-8F3B44256897" controlTypeID="TextArea" x="127" y="49" w="261" h="144" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>Proin+luctus+semper+lobortis.+Nunc+efficitur+ipsum+a+nisl+euismod+porttitor.+Phasellus+ac+imperdiet+odio.+Proin+commodo+mattis+justo+vel+gravida.+In+sollicitudin+hendrerit+elit+eu+dapibus.+Phasellus+ut+tortor+a+dui+viverra+posuere+id+id+lorem.+Nulla+et+eros+efficitur%2C+pharetra+felis+quis%2C+mollis+felis.%0D%0A</text>
+          <textSize>12</textSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="6C25F484-4E29-41CB-9352-9389A0EE62B6" controlTypeID="Label" x="183" y="5" w="108" h="27" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>ProfileName</text>
+          <textSize>20</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="0D9FB2AC-9A0D-415A-8D9E-0CCB3BD92C60" controlTypeID="Border" x="0" y="0" w="401" h="206" zOrder="3">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="CB10FD3B-57D1-44AC-A505-E876E9209A16" controlTypeID="Panel" x="467" y="124" w="300" h="431" zOrder="3">
+      <color>4291611852</color>
+      <groupChildrenDescriptors>
+        <control controlID="179C5D25-A023-4825-8570-EBEE6B00E397" controlTypeID="Label" x="97" y="9" w="101" h="27" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>Preferences</text>
+          <textSize>20</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="54DA5475-D6CD-4698-B135-D916090643B8" controlTypeID="RadioButtonGroup" x="10" y="118" w="120" h="68" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>RadioButton1%0D%0ARadioButton2%0D%0ARadioButton3</text>
+          <lineSpacing>0</lineSpacing>
+          <itemRect>[{"left":0,"top":0,"right":120,"bottom":16},{"left":0,"top":26,"right":120,"bottom":42},{"left":0,"top":52,"right":120,"bottom":68}]</itemRect>
+        </control>
+        <control controlID="883FA50E-6C3D-4538-AD47-161D7890200A" controlTypeID="CheckBoxGroup" x="10" y="255" w="150" h="68" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>%5B%5DCheckbox1%0D%0A%5Bx%5DCheckbox2%0D%0A-%5B%5DCheckbox3-</text>
+          <textSize>12</textSize>
+          <lineSpacing>0</lineSpacing>
+          <itemHeight>16</itemHeight>
+          <itemRect>[{"left":0,"top":0,"right":150,"bottom":16},{"left":0,"top":26,"right":150,"bottom":42},{"left":0,"top":52,"right":150,"bottom":68}]</itemRect>
+        </control>
+        <control controlID="18DED282-F62E-4118-B3C7-0FEA8B730C99" controlTypeID="TextInput" x="10" y="392" w="228" h="24" zOrder="3">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>Blacklist+tags</text>
+          <textSize>12</textSize>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="4C33C773-C932-4D23-B4C4-A3933E0C3A36" controlTypeID="Border" x="0" y="0" w="300" h="431" zOrder="4">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>
